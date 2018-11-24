@@ -1,0 +1,13 @@
+{
+    "short_name": "Pomodoro",
+    "name": "Pomodoro Clock",
+    "start_url": "/",
+    "background_color": "#0881A3",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#0881A3",
+    "icons": [{
+      "src": "icon.png",
+      "sizes": "512x512"
+    }]
+  }
