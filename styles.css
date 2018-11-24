@@ -1,0 +1,141 @@
+:root{
+    --darkerBlue: #0c3b4c;
+    --darkBlue: #1F4E5F;
+    --blue: #0881A3;
+    --offwhite: #F4E7D3;
+    --white: #F9F8ED;
+  }
+  
+  body {
+    background: var(--darkerBlue);
+    font-family: "Dosis", sans;
+    color: var(--white);
+  }
+  
+  .cont {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    
+  }
+  .clock-cont {
+    grid-column: 2/3;
+    text-align: center;
+  }
+  
+  h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 3.2rem;
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%,0);
+    white-space: nowrap;
+  }
+  #label {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  /*   letter-spacing: 2px; */
+    text-transform: uppercase;
+    font-size: .9rem;
+  }
+  
+  #label.break{
+    color: var(--blue);
+  }
+  
+  #counter {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+    border-radius: 400px;
+  }
+  #circle {
+    width: 175px;
+    height: 175px;
+    border-radius: 175px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 0;
+    border: 1px solid var(--white);
+  }
+  #circle2 {
+    width: 285px;
+    height: 285px;
+    border-radius: 300px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+    border: 5px solid var(--blue);
+    opacity: .2;
+  }
+  
+  #circle.break{
+    border: 1px solid var(--blue);
+  }
+  
+  .break{
+    background-color: rgba(0,0,0,0) !important;
+  }
+  
+  input {
+    background: rgba(0,0,0,0);
+    border: 0;
+    color: var(--white);
+    text-align: center;
+    font-size: 3.2rem;
+    width: 100px;
+    font-family: "dosis", sans;
+    
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  
+  input:focus{
+    outline: none;
+    border-bottom: 2px solid var(--blue);
+  }
+  
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+  
+  .inputs {
+    text-align: center;
+    display: grid;
+    position: absolute;
+    
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    grid-template-columns: 1fr 1fr;
+    width: 300px;
+    margin: auto;
+  }
+  
+  #reset {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-70%); 
+  }
+  
+  #reset:hover{
+    cursor: pointer;
+  }
+  
+  ::selection {
+    background: #fff; /* WebKit/Blink Browsers */
+    color: var(--darkerBlue);
+  }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pomodoro Clock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Montserrat+Alternates" rel="stylesheet">
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <div class="cont">
+            <div class="clock-cont">
+                <h1>Take a break</h1>
+                <div class="inputs">
+                    <div class="break-cont">
+                        <div>Break length</div>
+                        <input type="number" id="break" min=1 value=5>
+                    </div>
+                    <div class="session-cont">
+                        <div>Session length</div>
+                        <input type="number" id="session" min=1 value=25>
+                    </div>
+                </div>
+                <a href="" id="start">
+                    <div id="circle"></div>
+                    <div id="circle2"></div>
+                    <canvas id="counter" height=300 width=300></canvas>
+                </a>
+            
+                <div id="label"></div>
+                <div id="reset" hidden>Reset Timer</div>
+            </div>
+        </div>      
+        <script src="./scripts.js"></script>
+    </body>
+</html>
