@@ -8,7 +8,10 @@ self.addEventListener('install', function(e) {
           '/scripts.js',
           '/manifest.json',
           '/icon.png',
-          'https://code.jquery.com/jquery-3.3.1.min.js'
+          'https://code.jquery.com/jquery-3.3.1.min.js',
+          '/resources/bleep_02.wav',
+          '/resources/computerbeep2.wav',
+          'https://fonts.gstatic.com/s/dosis/v7/HhyaU5sn9vOmLzloC_U.woff2'
         ]);
       })
     );

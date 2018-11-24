@@ -41,6 +41,10 @@ $("input").change(e => {
   count = session;
   allSeconds = session*60;
   secondsCount = 0;
+  isBreak = false;
+
+  $("#label").removeClass("break");
+  $("#label").html("Session");
   breakTime = breakLength - 1;
   renderTime();
 });
@@ -96,11 +100,10 @@ function myTimer() {
   countSeconds();
   renderTime();
 }
-
+const audioWork = new Audio('./resources/bleep_02.wav');
+const audioBreak = new Audio('./resources/computerbeep2.wav');
 function countSeconds() {
-  // var audio = new Audio('https://www.freespecialeffects.co.uk/soundfx/computers/bleep_06.wav');
-  var audioWork = new Audio('https://www.freespecialeffects.co.uk/soundfx/computers/bleep_02.wav');
-  var audioBreak = new Audio('https://www.freespecialeffects.co.uk/soundfx/computers/computerbeep2.wav');
+  
   if (secondsCount > 0) {
     secondsCount--;
   } else {
